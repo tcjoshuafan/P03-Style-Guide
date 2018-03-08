@@ -6,7 +6,7 @@ Default styling for the style guide
 body {
     font-family: 'Archivo Narrow', sans-serif;
     padding: 2rem;
-    background-color: #eaf1f7;
+    background-color: #f4f4f4;
 
 }
 
@@ -39,6 +39,10 @@ section code {
     display: block;
 }
 
+#information p {
+    max-width: 50%;
+}
+
 
 /* 
 INTERACTIVE ELEMENTS -------------------
@@ -48,19 +52,23 @@ INTERACTIVE ELEMENTS -------------------
 
 .in-text-link {
     text-decoration: none;
-    color: #3057D5;
+    color: #3a5ba9;
+    background-color: none;
+    transition: background-color 0.5s;
     transition: color 0.5s;
 }
 
 .in-text-link:hover {
-    color: #899da3;
-    font-weight: 700;
+    color: white;
+    font-weight: 600;
+    background-color: #3a5ba9;
+    padding: 2px;
 }
 
 
 /* Styling for the navigation button */
 
-nav{
+nav {
     background-color: white;
 }
 
@@ -89,7 +97,22 @@ nav li {
     padding: 0;
 }
 
-.button-nav:hover{
+.button-nav:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.button-nav:hover {
     font-weight: 600;
     color: #3a5ba9;
 }
@@ -101,42 +124,49 @@ nav li {
     left: 0;
     bottom: -0.25rem;
     border-bottom: 2px solid #3a5ba9;
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 
 /* Styling for cta buttons */
 
 .cta-button {
-    position: relative;
     display: inline-block;
+    transition-property: transform;
+    transition-duration: 5s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+    border: 2px solid #3a5ba9;
+
+    margin: .4em;
+    padding: 1em;
+    cursor: pointer;
+    background-color: none;
     text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 0.0625rem;
-    padding: 0.5rem;
-    color: #3057D5;
-    border: 2px solid #3057D5;
+    color: #3a5ba9;
+
+    transition: color 0.5s;
 }
 
-.cta-button:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    background: #3057D5;
-    transition: height 0.5s;
-}
 
 .cta-button:hover {
-    color: #fff;
+    transform: translateY(-6px);
+    animation-name: hover;
+    animation-duration: 10s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    background-color: #3a5ba9;
+    color: white;
 }
 
-.cta-button:hover:after {
-    top: 0;
-    height: 100%;
 }
+
 
 /* Styling for text input field */
 
@@ -190,29 +220,12 @@ COMBINED ELEMENTS -------------------
 
 /* Styling for main nav */
 
-#main-nav,
-#main-nav ul {
-    position: relative;
-    display: inline-flex;
-    width: 100%;
-    height: 5rem;
-    align-items: center;
-    background: #3057D5;
+#main-nav li:first-of-type {
+    width: 70%;
+    padding-left: 3rem;
+
 }
 
-#main-nav li {
-    flex: 1 1 auto;
-    text-align: center;
-}
-
-#main-nav li:nth-child(4) {
-    flex: 50 0 auto;
-    font-size: 1.75rem;
-}
-
-#main-nav nav li:nth-child(4) {
-    border: none;
-}
 
 /* Website grid */
 
@@ -255,28 +268,17 @@ COMBINED ELEMENTS -------------------
     background-color: black;
 }
 
-#super-dark-grey {
-    background-color: #102c34;
-}
-
-#mid-grey {
-    background-color: #899da3;
-}
-
-#light-grey {
-    background-color: #eaf1f7;
-}
-
 #white {
     background-color: white;
 }
 
-#dull-blue {
-    background-color: #4B83AD;
+
+#purple-blue {
+    background-color: #3a5ba9;
 }
 
-#vivid-blue {
-    background-color: #3057D5;
+#soft-grey{
+    background-color: #f4f4f4;
 }
 
 /* Citations styling */
