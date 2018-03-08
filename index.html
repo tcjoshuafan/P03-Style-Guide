@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>P02 - Company</title>
+
+        <link href="css/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <h1>IAT 339: P02</h1>
+        <h2>Style Guide</h2>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="button-nav">Style Guide</a>
+                </li>
+                <li>
+                    <a href="sitemap.html" class="button-nav">Sitemap</a>
+                </li>
+                <li>
+                    <a href="user_flows.html" class="button-nav">Obsolete User Flows</a>
+                </li>
+                <li>
+                    <a href="citations.html" class="button-nav">Citations</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <section id="information">
+            <h2>About Carbon </h2>
+
+            <p>Name: carbon computers </p>
+            <p>Website: <a class="in-text-link" href="www.carbon.co"> www.carbon.co </a> </p>
+            <p>Industry: Consumer Technology, Personal Computing</p>
+            <p>Company Personality: Technical + Friendly Layperson</p>
+            <p>Customer Segment:</p>
+            <ul>
+                <li> Primary - People who enjoy games but lack the knowledge of component selection, building a computer, or hardware performance </li>
+
+                <li> Secondary - People buying for others; don't know/care for the details, just roughly know what kind of games the computer is meant for </li>
+
+                <li> Tertiary - Enthusiasts that have the indepth technical knowledge, but lack the time or care to build a system </li>
+            </ul>
+
+            <p> Value Proposition </p>
+            <ul>
+                <li>Providing systems not based solely around specs, but offer/suggest its capabilities in experiences; games, workloads, etc. </li>
+            </ul>
+        </section>
+
+        <!-- INTERACTIVE ELEMENTS SECTION // -->
+        <section id="interactive_elements">
+
+            <!-- Default Button styling section -->
+            <section>
+                <h2>In-text link</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.in-text-link</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;a href="#" class="in-text-link"&gt;In-text link&lt;/a&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <a class="in-text-link" href="#">In-text link</a>
+            </section>
+
+            <section>
+                <h2>Navigation Button</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.button-nav</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;nav&gt; <br>
+                    &nbsp;&lt;ul&gt; <br>
+                    &nbsp;&nbsp;&lt;li&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&lt;/li&gt;<br>
+                    &nbsp;&lt;/ul&gt; <br>
+                    &lt;/nav&gt;
+                </code>
+
+                <h3>Rendered element:</h3>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#" class="button-nav">Navigation Button</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section>
+                <h2>Product Information Accordion</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.product-info-accordion</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;button class="product-info-accordion">Section 1&lt;/button&gt;<br>
+                    &lt;div class="product-info-panel"&gt;<br>
+                    &nbsp;&lt;p&gt;Lorem ipsum...&lt;/p&gt;<br>
+                    &lt;/div&gt;<br>
+                    <span></span>
+                    &lt;button class="product-info-accordion"&gt;Section 2&lt;/button&gt;<br>
+                    &lt;div class="product-info-panel"&gt;<br>
+                    &nbsp;&lt;p&gt;Lorem ipsum...&lt;/p&gt;<br>
+                    &lt;/div&gt;<br>
+                    <span></span>
+                    &lt;button class="product-info-accordion"&gt;Section 3&lt;/button&gt;<br>
+                    &lt;div class="product-info-panel"&gt;<br>
+                    &nbsp;&lt;p&gt;Lorem ipsum...&lt;/p&gt;<br>
+                    &lt;/div&gt;<br>
+                </code>
+
+                <h3>Rendered element:</h3>
+
+                <button class="product-info-accordion">Section 1</button>
+                <div class="product-info-panel product-copy">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="product-info-accordion">Section 2</button>
+                <div class="product-info-panel product-copy">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="product-info-accordion">Section 3</button>
+                <div class="product-info-panel product-copy">
+                    <p>Lorem ipsum...</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>CTA Button</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.cta-button</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;a href="#" class="cta-button"&gt;CTA Button&lt;/a&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <a class="cta-button" href="#">CTA Button</a>
+            </section>
+
+            <section>
+                <h2>Text Input Field</h2>
+
+                <h3>CSS selector:</h3>
+                <p>#text-input-field, .input-field-label</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;form&gt;<br>
+                    &nbsp;&lt;label for="text-input-field" class="input-field-label"&gt;Label&lt;/label&gt;<br>
+                    &nbsp;&lt;input type="text" id="text-input-field" placeholder="i.e. Text Sample"&gt;<br>
+                    &lt;/form&gt;
+                </code>
+
+                <h3>Rendered element:</h3>
+                <form>
+                    <label for="text-input-field" class="input-field-label">Label</label>
+                    <input type="text" class="text-input-field" placeholder="i.e. Sample Text">
+                </form>
+            </section>
+
+
+        </section>
+        <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+        <!-- TEXT ELEMENTS SECTION // -->
+        <section id="text_elements">
+
+            <section>
+                <h2>H1 Heading</h2>
+
+                <div class="heading-wrapper">
+                    <h3>CSS selector:</h3>
+                    <p>h1</p>
+
+                    <h3>Sample code:</h3>
+                    <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
+
+                    <h3>Rendered element:</h3>
+                    <h1>Heading 1</h1>
+                </div>
+            </section>
+
+            <section>
+                <h2>H2 Heading</h2>
+
+                <div class="heading-wrapper">
+                    <h3>CSS selector:</h3>
+                    <p>h2</p>
+
+                    <h3>Sample code:</h3>
+                    <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
+
+                    <h3>Rendered element:</h3>
+                    <h2>Heading 2</h2>
+                </div>
+            </section>
+
+            <section>
+                <h2>H3 Heading</h2>
+                <div class="heading-wrapper">
+                    <h3>CSS selector:</h3>
+                    <p>h3</p>
+
+                    <h3>Sample code:</h3>
+                    <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
+
+                    <h3>Rendered element:</h3>
+                    <h3>Heading 3</h3>
+                </div>
+            </section>
+
+            <section>
+                <h2>H4 Heading</h2>
+
+                <div class="heading-wrapper">
+                    <h3>CSS selector:</h3>
+                    <p>h4</p>
+
+                    <h3>Sample code:</h3>
+                    <code>&lt;h4&gt;Heading 1&lt;/h4&gt;</code>
+
+                    <h3>Rendered element:</h3>
+                    <h4>Heading 4</h4>
+                </div>
+            </section>
+
+            <section>
+                <h2>Paragraphs</h2>
+
+                <h3>CSS selector:</h3>
+                <p>p</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;p&gt;Paragraph&lt;/p&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <p>Paragraph</p>
+            </section>
+
+            <section>
+                <h2>Bulleted Lists</h2>
+
+                <h3>CSS selector:</h3>
+                <p>ul</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;ul&gt;<br>
+                    &nbsp;&lt;li&gt;Bullet list 1&lt;/li&gt;<br>
+                    &nbsp;&lt;li&gt;Bullet list 2&lt;/li&gt;<br>
+                    &nbsp;&lt;li&gt;Bullet list 3&lt;/li&gt;<br>
+                    &lt;/ul&gt;<br>
+                </code>
+
+                <h3>Rendered element:</h3>
+                <ul>
+                    <li>Bullet list 1</li>
+                    <li>Bullet list 2</li>
+                    <li>Bullet list 3</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Numbered Lists</h2>
+
+                <h3>CSS selector:</h3>
+                <p>ol</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;ol&gt;<br>
+                    &nbsp;&lt;li&gt;Bullet list 1&lt;/li&gt;<br>
+                    &nbsp;&lt;li&gt;Bullet list 2&lt;/li&gt;<br>
+                    &nbsp;&lt;li&gt;Bullet list 3&lt;/li&gt;<br>
+                    &lt;/ol&gt;
+                </code>
+
+                <h3>Rendered element:</h3>
+                <ol>
+                    <li>Numbered list 1</li>
+                    <li>Numbered list 2</li>
+                    <li>Numbered list 3</li>
+                </ol>
+            </section>
+
+        </section>
+        <!-- // TEXT ELEMENTS SECTION -->
+
+
+        <!-- COMBINED ELEMENTS SECTION // -->
+        <section id="combined_elements">
+
+            <section>
+                <h2>Main Navigation</h2>
+
+                <nav data-brackets-id="5370" id="main-nav">
+                    <ul data-brackets-id="5371">
+                        <li data-brackets-id="5372">
+                            <a data-brackets-id="5373" href="index.html" class="button-nav">
+                                <img data-brackets-id="5374" src="img/icons/logo-white.png" alt="carbon computer logo">
+                            </a>
+                        </li>
+
+                        <li data-brackets-id="5375">
+                            <a data-brackets-id="5376" href="gaming.html" class="button-nav">gaming</a>
+                        </li>
+
+                        <li data-brackets-id="5377">
+                            <a data-brackets-id="5378" href="work.html" class="button-nav">work</a>
+                        </li>
+
+                        <li data-brackets-id="5379">
+                            <a data-brackets-id="5380" href="home.html" class="button-nav">household</a>
+                        </li>
+
+                        <li data-brackets-id="5381">
+                            <a data-brackets-id="5382" href="chat.html" class="button-nav">chat</a>
+                        </li>
+
+                        <li data-brackets-id="5383">
+                            <a data-brackets-id="5384" href="about.html" class="button-nav">about</a>
+                        </li>
+
+                        <li data-brackets-id="5385">
+                            <form data-brackets-id="5386" id="search-icon">
+                                <input data-brackets-id="5387" type="search">
+                            </form>
+                        </li>
+
+                    </ul>
+                </nav>
+            </section>
+
+            <section>
+                <h2>Product Listing</h2>
+
+                <h3>Rendered element:</h3>
+
+            </section>
+
+            <section id="systems">
+                <h2>Website Grid Structure</h2>
+
+                <div class="grid-wrapper">
+                    <div class="column-1-of-3">
+                        <div class="panel-wrapper">
+                            <div class="no-interaction">
+                                <a class="clickable-panel" href="#">
+                                </a>
+                                <img class="systems-computer-img" src="img/computer-images/triton.png" alt="image of triton computer">
+                                <h4>gaming</h4>
+                                <p>Our bread and butter, gaming is our passion and speciality</p>
+                            </div>
+                            <div class="hover-state">
+                                <img class="panel-hover-image" src="img/gaming-panel-hover-state.png" alt="cropped image of monitor and mouse with blue overlay">
+                                <img class="systems-computer-img" src="img/computer-images/triton.png" alt="image of triton computer">
+                                <h4>gaming</h4>
+                                <p>Our bread and butter, gaming is our passion and speciality</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column-1-of-3">
+                        <div class="panel-wrapper">
+                            <div class="no-interaction">
+                                <a class="clickable-panel" href="#">
+                                </a>
+                                <img class="systems-computer-img" src="img/computer-images/eos.png" alt="image of eos computer">
+                                <h4>work</h4>
+                                <p>Help make your business stand out, with systems that are both professional and stylish. </p>
+                            </div>
+                            <div class="hover-state">
+                                <img class="panel-hover-image" src="img/work-panel-hover-state.png" alt="cropped image of monitor and mouse with blue overlay">
+                                <img class="systems-computer-img" src="img/computer-images/eos.png" alt="image of eos computer">
+                                <h4>work</h4>
+                                <p>Help make your business stand out, with systems that are both professional and stylish. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column-1-of-3">
+                        <div class="panel-wrapper">
+                            <div class="no-interaction">
+                                <a class="clickable-panel" href="#">
+                                </a>
+                                <img class="systems-computer-img" src="img/computer-images/entra.png" alt="image of entra computer">
+                                <h4>home</h4>
+                                <p>Affordable doesn't have to mean low quality.</p>
+                            </div>
+                            <div class="hover-state">
+                                <img class="panel-hover-image" src="img/custom-panel-hover-state.png" alt="cropped image of three monitors and mouse with blue overlay">
+                                <img class="systems-computer-img" src="img/computer-images/entra.png" alt="image of entra computer">
+                                <h4>home</h4>
+                                <p>Affordable doesn't have to mean low quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Note: Grid structure for the product listings page.</p>
+
+            </section>
+
+            <section>
+                <h2>Website Colour Swatches</h2>
+                <div id="palette">
+                    <div class="colour-swatch" id="black"></div>
+                    <div class="colour-swatch" id="mid-grey"></div>
+                    <div class="colour-swatch" id="light-grey"></div>
+                    <div class="colour-swatch" id="white"></div>
+                    <div class="colour-swatch" id="vivid-blue"></div>
+                </div>
+            </section>
+
+        </section>
+        <!-- // COMBINED ELEMENTS SECTION -->
+
+        <!-- JavaScript for Product Information Accordian -->
+        <script>
+            var acc = document.getElementsByClassName("product-info-accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+    </body>
+
+</html>
